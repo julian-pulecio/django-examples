@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'simplemodel.apps.SimplemodelConfig',
     'model_with_choices_field.apps.ModelWithChoicesFieldConfig'
+    'model_with_meta_class.apps.ModelWithMetaClassConfig'
 ]
 
 MIDDLEWARE = [
