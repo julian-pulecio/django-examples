@@ -9,11 +9,11 @@ class Student(models.Model):
     name = models.CharField(max_length=255)
     created_at = models.DateField(auto_now_add=True)
     updated_at = models.DateField(auto_now=True)
-    gender = models.CharField(choices=Gender.choices)
+    gender = models.CharField(choices=Gender.choices, max_length=1)
 
     class Meta:
-        abstract = True
-        app_label = 'student_table'
+        # abstract = True
+        # app_label = 'student_table'
         ordering = ['-created_at']
         get_latest_by = ['-updated_at']
         constraints = [
